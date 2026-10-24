@@ -1,8 +1,8 @@
 <!doctype html>
 <!--
-  NovaCoil privacy policy and imprint. Upload
-  this single file anywhere public (GitHub Pages, own web space). It loads nothing from other
-  servers, so the page itself collects no data either.
+  NovaCoil privacy policy and imprint: for the app, the NovaCoil Hub (hub.novacoil.de) and the website
+  (novacoil.de). Upload this single file anywhere public (GitHub Pages, own web space). It loads nothing
+  from other servers, so the page itself collects no data either.
 -->
 <html lang="en">
 <head>
@@ -40,51 +40,122 @@
 
 <!-- ============================== ENGLISH ============================== -->
 <h2 id="en">Privacy Policy</h2>
-<p class="muted">Status: 10 October 2026</p>
+<p class="muted">Status: 24 October 2026</p>
 
 <h3>Responsible</h3>
 <address>Christian Lemke<br>Gabriele-Münter-Hof 23<br>71034 Böblingen<br>Germany<br>E-mail: <a href="mailto:info@vantrope.com">info@vantrope.com</a></address>
 
 <h3>Summary</h3>
-<p>NovaCoil is a game app for Recoil-compatible toy blasters. It has no user accounts, shows no ads and
-contains no analytics or tracking. The developer receives no data from the app. Everything a game
-needs travels over the local Wi-Fi between the players' devices; one of them runs the game.</p>
+<p>NovaCoil is a game app for Recoil-compatible toy blasters, for Android and iOS. It shows no ads and
+contains no analytics or tracking. Everything a game needs travels over the local Wi-Fi between the
+players' devices; one of them runs the game. The developer receives no data from the app –
+<strong>unless a club's admin connects the club to the NovaCoil Hub</strong> (hub.novacoil.de). Only then
+does the club's game device send the club's games and players to the hub, where they are shown
+publicly. Without this opt-in the app never contacts the hub. This policy covers the app, the hub and
+the website novacoil.de.</p>
 
-<h3>What the app processes, and why</h3>
+<h3 id="en-app">1. The app</h3>
 <ul>
   <li><strong>Location (precise):</strong> during a game, your position is sent over the local Wi-Fi to
   the game (running in the app on the host's phone or tablet) and to your team mates, for the game map,
-  zones and markers. Opposing teams never receive it. It is not stored after the game.</li>
+  zones and markers. Opposing teams never receive it. It is not stored after the game and never sent
+  to the hub.</li>
   <li><strong>Player name and avatar photo:</strong> the name you choose and, if you take one, a selfie
-  as avatar are shown to the other players of a game. The photo is kept only inside the app.</li>
+  as avatar are shown to the other players of a game and kept in the app and on your club's game
+  device. If your club is on the hub, they also appear there (see section 2) unless you are anonymous there.</li>
   <li><strong>Microphone:</strong> only while you hold the talk button (in the app or on the blaster),
-  your voice is sent over the local Wi-Fi to your team or the lobby. It is not recorded or stored.</li>
+  your voice is sent over the local Wi-Fi to your team or the lobby. It is not recorded or stored and
+  never sent to the hub.</li>
   <li><strong>Camera:</strong> for scanning game cards (QR codes) and for the avatar selfie. Scanner
   images are not stored.</li>
   <li><strong>Bluetooth:</strong> to connect to your blaster. Bluetooth scanning is not used to
   determine your location.</li>
   <li><strong>Game statistics</strong> (hits, kills, results) are stored on the devices of the game's
-  players. You can share them yourself using the export function.</li>
+  players and on the club's game device. You can share them yourself using the export function.</li>
+</ul>
+<p><strong>Map tiles:</strong> to show street maps, the app loads map tiles from OpenFreeMap
+(<a href="https://openfreemap.org">openfreemap.org</a>). In doing so, your IP address and the requested
+map area are transmitted to OpenFreeMap. Maps that have been downloaded are then used offline.
+Map data © OpenStreetMap contributors.</p>
+
+<h3 id="en-hub">2. The NovaCoil Hub (hub.novacoil.de)</h3>
+<p>The hub shows clubs, their games, rankings and a world map of the clubs. A club gets there only if
+its admin opts in in the app. From then on, the club's game device sends to the hub:</p>
+<ul>
+  <li><strong>About the club:</strong> its name, the admin's contact e-mail address, a password for the
+  hub's club login (the hub keeps only a hash of it, as of the club's key), the club's emblem, the place
+  where the club plays (for the world map, set by the admin) and the name and app version of the devices
+  that sync for the club (shown only to the admin).</li>
+  <li><strong>About each player:</strong> the callsign, a random profile ID of the app installation, the
+  avatar photo or chosen portrait, and a check value of the player's PIN (not the PIN itself).</li>
+  <li><strong>About each game:</strong> mode, rules, start time, duration, teams and result, and what
+  happened in it with its time – who joined or left, shots fired, hits, damage and eliminations. Games
+  contain no positions, no voice and no blaster IDs.</li>
+</ul>
+<p><strong>Visible to everyone:</strong> club names, emblems and places on the map, and the players'
+callsigns, pictures, games, statistics and rankings. The contact e-mail, password, PIN check value and
+device names are never shown.</p>
+<p><strong>Your choices:</strong></p>
+<ul>
+  <li>Only players with a PIN appear by name on the hub; without a PIN you are shown as "Anonymous".</li>
+  <li><strong>"Anonymous on the hub"</strong> in your profile in the app takes your name and picture out
+  of every game on the hub at the next sync; the games stay there, showing you as "Anonymous". You can
+  switch it off again.</li>
+  <li>On your player page on the hub you can make yourself anonymous the same way with your PIN.</li>
+  <li>A player deleted on the club's game device is taken off the hub for good.</li>
+  <li>The club's admin can delete single players, and delete the whole club with everything of it on
+  the hub – games, players, pictures, emblem and the club's name – in the app (opt-out) or in the hub's
+  club login. The admin receives a confirmation by e-mail.</li>
+</ul>
+<p><strong>Storage period:</strong> the hub keeps a club's data as long as the club is on the hub, and
+deletes it when the club is deleted. Logins to the club page end after one hour; links and codes for a
+new password or key are valid for one hour.</p>
+<p><strong>E-mail:</strong> the contact e-mail address is used only for a link to reset the password
+and for the confirmation when the club is deleted. These mails are sent through the mail server of our
+hoster (see section 4).</p>
+<p><strong>World map:</strong> the hub's map pages load map tiles from OpenFreeMap; your browser
+transmits its IP address and the map area to OpenFreeMap. The map program itself comes from the hub.</p>
+
+<h3 id="en-cookies">3. Cookies</h3>
+<p>The hub sets a cookie only when a club's admin logs in: <code>novacoil_club</code> keeps the login
+for at most one hour and is deleted on logout. It is technically necessary for the login
+(§ 25 (2) no. 2 TDDDG). The hub's operator login uses <code>novacoil_admin</code> the same way.
+There are no other cookies, and no tracking or advertising cookies on the hub or the website.</p>
+
+<h3 id="en-hosting">4. Hosting and server logs</h3>
+<p>The hub and the website novacoil.de run on a server of the hosting provider lima-city in Germany,
+which processes the data on our behalf under a data processing agreement (Art. 28 GDPR). To deliver
+the pages, the server necessarily processes your IP address. The web server writes no access logs;
+the hub's own log records events such as "club registered" or "player anonymous", with club and player
+names but without IP addresses.</p>
+<p><strong>Website novacoil.de:</strong> static pages without cookies; fonts and images come from the
+server itself. Links to Google Play, Apple TestFlight or the hub send data to those services only when
+you follow them.</p>
+<p><strong>This page</strong> is also published on GitHub Pages (GitHub Inc., USA); when you open it
+there, GitHub processes your IP address to deliver it.</p>
+
+<h3 id="en-legal">5. Legal basis</h3>
+<ul>
+  <li>Providing the game you use, and the club's account on the hub for its admin: Art. 6 (1) (b) GDPR.</li>
+  <li>Camera, microphone and location in the app: the permissions you grant in Android or iOS, which you
+  can withdraw at any time in the system settings (Art. 6 (1) (a) GDPR).</li>
+  <li>Publishing a club's games, players and rankings on the hub: the legitimate interest of the club and
+  its players in shared results and rankings (Art. 6 (1) (f) GDPR). You can object at any time with
+  "Anonymous on the hub" or with your PIN on the hub.</li>
+  <li>Delivering the pages and keeping the server secure: Art. 6 (1) (f) GDPR.</li>
 </ul>
 
-<h3>Map tiles</h3>
-<p>To show street maps, the app loads map tiles from OpenFreeMap (<a href="https://openfreemap.org">openfreemap.org</a>).
-In doing so, your IP address and the requested map area are transmitted to OpenFreeMap. Maps that
-have been downloaded are then used offline. Map data © OpenStreetMap contributors.</p>
+<h3 id="en-delete">6. Deleting your data</h3>
+<p>In the app, all data stays on the devices: uninstalling the app or "Clear data" in the system
+settings deletes it. On the hub, make yourself anonymous in the app or with your PIN, ask your club's admin, or
+write to us – we delete or anonymise your data on the hub.</p>
 
-<h3>Legal basis</h3>
-<p>Processing takes place to provide the game you use (Art. 6 (1) (b) GDPR) and, for camera, microphone
-and location, on the basis of the permissions you grant in Android, which you can withdraw at any time
-in the system settings (Art. 6 (1) (a) GDPR).</p>
-
-<h3>Deleting your data</h3>
-<p>All data stays on the devices. Uninstalling the app or using "Clear data" in the Android settings
-deletes it. As the developer receives no data, there is nothing stored elsewhere to delete.</p>
-
-<h3>Your rights</h3>
+<h3 id="en-rights">7. Your rights</h3>
 <p>You have the right to information, correction, deletion, restriction of processing, data
-portability and objection, and the right to lodge a complaint with a data protection supervisory
-authority.</p>
+portability and objection (Art. 15–21 GDPR), and the right to lodge a complaint with a data protection
+supervisory authority. The authority responsible for us is: Der Landesbeauftragte für den Datenschutz
+und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart, Germany
+(<a href="https://www.baden-wuerttemberg.datenschutz.de">baden-wuerttemberg.datenschutz.de</a>).</p>
 
 <h3>Children</h3>
 <p>NovaCoil is not directed at children under 13.</p>
@@ -95,55 +166,127 @@ authority.</p>
 <!-- ============================== DEUTSCH ============================== -->
 <h2 id="de" lang="de">Datenschutzerklärung</h2>
 <div lang="de">
-<p class="muted">Stand: 10. Oktober 2026</p>
+<p class="muted">Stand: 24. Oktober 2026</p>
 
 <h3>Verantwortlich</h3>
 <address>Christian Lemke<br>Gabriele-Münter-Hof 23<br>71034 Böblingen<br>Deutschland<br>E-Mail: <a href="mailto:info@vantrope.com">info@vantrope.com</a></address>
 
 <h3>Kurz gesagt</h3>
-<p>NovaCoil ist eine Spiele-App für Recoil-kompatible Spielzeug-Blaster. Sie hat keine Nutzerkonten,
-zeigt keine Werbung und enthält keine Analyse- oder Tracking-Dienste. Der Entwickler erhält keine
-Daten aus der App. Alles, was ein Spiel braucht, läuft über das lokale WLAN zwischen den Geräten der
-Spieler; eines davon leitet das Spiel.</p>
+<p>NovaCoil ist eine Spiele-App für Recoil-kompatible Spielzeug-Blaster, für Android und iOS. Sie zeigt
+keine Werbung und enthält keine Analyse- oder Tracking-Dienste. Alles, was ein Spiel braucht, läuft über
+das lokale WLAN zwischen den Geräten der Spieler; eines davon leitet das Spiel. Der Entwickler erhält
+keine Daten aus der App – <strong>außer der Admin eines Clubs verbindet den Club mit dem NovaCoil
+Hub</strong> (hub.novacoil.de). Nur dann schickt das Spielgerät des Clubs dessen Spiele und Spieler an
+den Hub, wo sie öffentlich zu sehen sind. Ohne diese Zustimmung nimmt die App nie Kontakt zum Hub auf.
+Diese Erklärung gilt für die App, den Hub und die Website novacoil.de.</p>
 
-<h3>Was die App verarbeitet und wozu</h3>
+<h3 id="de-app">1. Die App</h3>
 <ul>
   <li><strong>Standort (genau):</strong> Während eines Spiels geht deine Position über das lokale WLAN an
   das Spiel (die App auf dem Handy oder Tablet des Gastgebers) und an dein Team – für Spielkarte, Zonen
-  und Marker. Gegnerische Teams erhalten sie nie. Nach dem Spiel wird sie nicht gespeichert.</li>
+  und Marker. Gegnerische Teams erhalten sie nie. Nach dem Spiel wird sie nicht gespeichert, und sie
+  geht nie an den Hub.</li>
   <li><strong>Spielername und Avatarfoto:</strong> Der Name, den du wählst, und – falls du eins
-  aufnimmst – ein Selfie als Avatar werden den anderen Spielern eines Spiels angezeigt. Das Foto
-  bleibt nur in der App.</li>
+  aufnimmst – ein Selfie als Avatar werden den anderen Spielern eines Spiels angezeigt und in der App
+  und auf dem Spielgerät deines Clubs gespeichert. Ist dein Club im Hub, erscheinen sie auch dort
+  (siehe Abschnitt 2), außer du bist dort anonym.</li>
   <li><strong>Mikrofon:</strong> Nur solange du die Sprechtaste hältst (in der App oder am Blaster), geht
   deine Stimme über das lokale WLAN an dein Team oder die Lobby. Sie wird nicht aufgezeichnet oder
-  gespeichert.</li>
+  gespeichert und geht nie an den Hub.</li>
   <li><strong>Kamera:</strong> zum Scannen von Spielkarten (QR-Codes) und für das Avatar-Selfie. Bilder
   des Scanners werden nicht gespeichert.</li>
   <li><strong>Bluetooth:</strong> zur Verbindung mit deinem Blaster. Die Bluetooth-Suche wird nicht zur
   Standortbestimmung genutzt.</li>
   <li><strong>Spielstatistiken</strong> (Treffer, Abschüsse, Ergebnisse) werden auf den Geräten der
-  Spieler gespeichert. Du kannst sie selbst über die Export-Funktion teilen.</li>
+  Spieler und auf dem Spielgerät des Clubs gespeichert. Du kannst sie selbst über die Export-Funktion
+  teilen.</li>
+</ul>
+<p><strong>Kartenkacheln:</strong> Für Straßenkarten lädt die App Kartenkacheln von OpenFreeMap
+(<a href="https://openfreemap.org">openfreemap.org</a>). Dabei werden deine IP-Adresse und der
+angefragte Kartenausschnitt an OpenFreeMap übermittelt. Heruntergeladene Karten werden danach offline
+genutzt. Kartendaten © OpenStreetMap-Mitwirkende.</p>
+
+<h3 id="de-hub">2. Der NovaCoil Hub (hub.novacoil.de)</h3>
+<p>Der Hub zeigt Clubs, ihre Spiele, Ranglisten und eine Weltkarte der Clubs. Ein Club kommt nur dorthin,
+wenn sein Admin in der App zustimmt. Ab dann schickt das Spielgerät des Clubs an den Hub:</p>
+<ul>
+  <li><strong>Zum Club:</strong> seinen Namen, die Kontakt-E-Mail-Adresse des Admins, ein Passwort für den
+  Club-Login im Hub (der Hub speichert davon nur einen Hash, ebenso vom Schlüssel des Clubs), das Wappen
+  des Clubs, den Ort, an dem der Club spielt (für die Weltkarte, vom Admin festgelegt), sowie Name und
+  App-Version der Geräte, die für den Club abgleichen (nur für den Admin sichtbar).</li>
+  <li><strong>Zu jedem Spieler:</strong> das Callsign, eine zufällige Profil-ID der App-Installation, das
+  Avatarfoto oder das gewählte Porträt und einen Prüfwert der PIN des Spielers (nicht die PIN selbst).</li>
+  <li><strong>Zu jedem Spiel:</strong> Modus, Regeln, Startzeit, Dauer, Teams und Ergebnis sowie, was
+  darin mit welcher Zeit geschah – wer beitrat oder ging, abgegebene Schüsse, Treffer, Schaden und
+  Ausscheiden. Spiele enthalten keine Positionen, keine Sprache und keine Blaster-IDs.</li>
+</ul>
+<p><strong>Für alle sichtbar:</strong> Clubnamen, Wappen und Orte auf der Karte sowie Callsigns, Bilder,
+Spiele, Statistiken und Ranglisten der Spieler. Kontakt-E-Mail, Passwort, PIN-Prüfwert und Gerätenamen
+werden nie angezeigt.</p>
+<p><strong>Deine Möglichkeiten:</strong></p>
+<ul>
+  <li>Nur Spieler mit PIN erscheinen im Hub mit Namen; ohne PIN wirst du als „Anonym“ angezeigt.</li>
+  <li><strong>„Anonym auf dem Hub“</strong> in deinem Profil in der App nimmt deinen Namen und dein Bild
+  beim nächsten Abgleich aus allen Spielen im Hub; die Spiele bleiben erhalten und zeigen dich als
+  „Anonym“. Du kannst es wieder abschalten.</li>
+  <li>Auf deiner Spielerseite im Hub kannst du dich ebenso mit deiner PIN anonym machen.</li>
+  <li>Ein auf dem Spielgerät des Clubs gelöschter Spieler wird endgültig aus dem Hub entfernt.</li>
+  <li>Der Admin des Clubs kann einzelne Spieler löschen und den ganzen Club mit allem, was im Hub von ihm
+  liegt – Spiele, Spieler, Bilder, Wappen und den Clubnamen –, in der App (Abmeldung) oder im Club-Login
+  des Hubs löschen. Der Admin erhält eine Bestätigung per E-Mail.</li>
+</ul>
+<p><strong>Speicherdauer:</strong> Der Hub speichert die Daten eines Clubs, solange der Club im Hub ist,
+und löscht sie, wenn der Club gelöscht wird. Anmeldungen auf der Club-Seite enden nach einer Stunde;
+Links und Codes für ein neues Passwort oder einen neuen Schlüssel gelten eine Stunde.</p>
+<p><strong>E-Mail:</strong> Die Kontakt-E-Mail-Adresse wird nur für einen Link zum Zurücksetzen des
+Passworts und für die Bestätigung beim Löschen des Clubs genutzt. Diese Mails gehen über den Mailserver
+unseres Hosters (siehe Abschnitt 4).</p>
+<p><strong>Weltkarte:</strong> Die Kartenseiten des Hubs laden Kartenkacheln von OpenFreeMap; dein
+Browser übermittelt dabei seine IP-Adresse und den Kartenausschnitt an OpenFreeMap. Das Kartenprogramm
+selbst kommt vom Hub.</p>
+
+<h3 id="de-cookies">3. Cookies</h3>
+<p>Der Hub setzt nur dann ein Cookie, wenn sich der Admin eines Clubs anmeldet: <code>novacoil_club</code>
+hält die Anmeldung höchstens eine Stunde und wird beim Abmelden gelöscht. Es ist für die Anmeldung
+technisch erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Die Betreiber-Anmeldung des Hubs nutzt
+<code>novacoil_admin</code> ebenso. Weitere Cookies, insbesondere Tracking- oder Werbe-Cookies, gibt es
+weder im Hub noch auf der Website.</p>
+
+<h3 id="de-hosting">4. Hosting und Server-Protokolle</h3>
+<p>Der Hub und die Website novacoil.de laufen auf einem Server des Hosting-Anbieters lima-city in
+Deutschland, der die Daten in unserem Auftrag auf Grundlage eines Vertrags zur Auftragsverarbeitung
+verarbeitet (Art. 28 DSGVO). Um die Seiten auszuliefern, verarbeitet der Server zwangsläufig deine
+IP-Adresse. Der Webserver schreibt keine Zugriffsprotokolle; das Protokoll des Hubs hält Ereignisse wie
+„Club angemeldet“ oder „Spieler anonym“ fest, mit Club- und Spielernamen, aber ohne IP-Adressen.</p>
+<p><strong>Website novacoil.de:</strong> statische Seiten ohne Cookies; Schriften und Bilder kommen vom
+eigenen Server. Links zu Google Play, Apple TestFlight oder dem Hub übermitteln erst Daten an diese
+Dienste, wenn du ihnen folgst.</p>
+<p><strong>Diese Seite</strong> ist auch auf GitHub Pages (GitHub Inc., USA) veröffentlicht; rufst du
+sie dort auf, verarbeitet GitHub deine IP-Adresse, um sie auszuliefern.</p>
+
+<h3 id="de-legal">5. Rechtsgrundlage</h3>
+<ul>
+  <li>Bereitstellung des von dir genutzten Spiels und des Club-Zugangs im Hub für den Admin: Art. 6 Abs. 1
+  lit. b DSGVO.</li>
+  <li>Kamera, Mikrofon und Standort in der App: die Berechtigungen, die du in Android oder iOS erteilst
+  und jederzeit in den Systemeinstellungen widerrufen kannst (Art. 6 Abs. 1 lit. a DSGVO).</li>
+  <li>Veröffentlichung der Spiele, Spieler und Ranglisten eines Clubs im Hub: das berechtigte Interesse des
+  Clubs und seiner Spieler an gemeinsamen Ergebnissen und Ranglisten (Art. 6 Abs. 1 lit. f DSGVO). Du
+  kannst jederzeit widersprechen – mit „Anonym auf dem Hub“ oder mit deiner PIN im Hub.</li>
+  <li>Auslieferung der Seiten und Sicherheit des Servers: Art. 6 Abs. 1 lit. f DSGVO.</li>
 </ul>
 
-<h3>Kartenkacheln</h3>
-<p>Für Straßenkarten lädt die App Kartenkacheln von OpenFreeMap (<a href="https://openfreemap.org">openfreemap.org</a>).
-Dabei werden deine IP-Adresse und der angefragte Kartenausschnitt an OpenFreeMap übermittelt.
-Heruntergeladene Karten werden danach offline genutzt. Kartendaten © OpenStreetMap-Mitwirkende.</p>
+<h3 id="de-delete">6. Löschen deiner Daten</h3>
+<p>In der App bleiben alle Daten auf den Geräten: Deinstallieren der App oder „Daten löschen“ in den
+Systemeinstellungen entfernt sie. Im Hub machst du dich in der App oder mit deiner PIN anonym, fragst den
+Admin deines Clubs oder schreibst uns – wir löschen oder anonymisieren deine Daten im Hub.</p>
 
-<h3>Rechtsgrundlage</h3>
-<p>Die Verarbeitung erfolgt zur Bereitstellung des von dir genutzten Spiels (Art. 6 Abs. 1 lit. b
-DSGVO) und für Kamera, Mikrofon und Standort auf Grundlage der Berechtigungen, die du in Android
-erteilst und jederzeit in den Systemeinstellungen widerrufen kannst (Art. 6 Abs. 1 lit. a DSGVO).</p>
-
-<h3>Löschen deiner Daten</h3>
-<p>Alle Daten bleiben auf den Geräten. Deinstallieren der App oder „Daten löschen“ in den
-Android-Einstellungen entfernt sie. Da der Entwickler keine Daten erhält, ist anderswo nichts
-gespeichert.</p>
-
-<h3>Deine Rechte</h3>
+<h3 id="de-rights">7. Deine Rechte</h3>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-Datenübertragbarkeit und Widerspruch sowie das Recht auf Beschwerde bei einer
-Datenschutz-Aufsichtsbehörde.</p>
+Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO) sowie das Recht auf Beschwerde bei einer
+Datenschutz-Aufsichtsbehörde. Für uns zuständig ist: Der Landesbeauftragte für den Datenschutz und die
+Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart
+(<a href="https://www.baden-wuerttemberg.datenschutz.de">baden-wuerttemberg.datenschutz.de</a>).</p>
 
 <h3>Kinder</h3>
 <p>NovaCoil richtet sich nicht an Kinder unter 13 Jahren.</p>
