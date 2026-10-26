@@ -40,7 +40,7 @@
 
 <!-- ============================== ENGLISH ============================== -->
 <h2 id="en">Privacy Policy</h2>
-<p class="muted">Status: 25 October 2026 (rev. 5)</p>
+<p class="muted">Status: 26 October 2026 (rev. 6)</p>
 
 <h3>Responsible</h3>
 <p>NovaCoil is run jointly by two people, who are jointly responsible for the processing described here
@@ -88,6 +88,10 @@ the website novacoil.de.</p>
 (<a href="https://openfreemap.org">openfreemap.org</a>). In doing so, your IP address and the requested
 map area are transmitted to OpenFreeMap. Maps that have been downloaded are then used offline.
 Map data © OpenStreetMap contributors.</p>
+<p><strong>Aerial photos:</strong> where you switch the map to aerial photos, or a playing field's offline map
+stores them, the app loads them from the state survey office of Baden-Württemberg (Landesamt für
+Geoinformation und Landentwicklung, <a href="https://www.lgl-bw.de">lgl-bw.de</a>); your IP address and the
+requested map area are transmitted to it. Aerial photos © LGL, dl-de/by-2.0.</p>
 
 <h3 id="en-hub">2. The NovaCoil Hub (hub.novacoil.de)</h3>
 <p>The hub shows clubs, their games, rankings and a world map of the clubs. A club gets there only if
@@ -106,9 +110,12 @@ its admin opts in in the app. From then on, the club's game device sends to the 
 <p><strong>Visible to everyone:</strong> club names, emblems and places on the map, and the players'
 callsigns, pictures, games, statistics and rankings. The contact e-mail, password, PIN check value and
 device names are never shown.</p>
+<p><strong>Logging in on the hub:</strong> players log in with their club, callsign and app PIN – to reach
+their profile and their club's page; a club's admin logs in with the club's name and password. Logging in is
+needed only for the things below; everything public can be seen without it.</p>
 <p><strong>Private clubs:</strong> a club's admin can make the club private in the app. It then stays in the
-club list (marked private) and on the map, but its players and games are visible only to its members, who log in
-on the club's hub page with their callsign and app PIN, and to the club's admin login.</p>
+club list (marked private) and on the map, but its players and games are visible only to its members, logged in
+with their callsign and app PIN, and to the club's admin login.</p>
 <p><strong>Your choices:</strong></p>
 <ul>
   <li>Only players with a PIN appear by name on the hub; without a PIN you are shown as "Anonymous".</li>
@@ -122,19 +129,22 @@ on the club's hub page with their callsign and app PIN, and to the club's admin 
   club login. The admin receives a confirmation by e-mail.</li>
 </ul>
 <p><strong>Storage period:</strong> the hub keeps a club's data as long as the club is on the hub, and
-deletes it when the club is deleted. Logins to the club page end after one hour; links and codes for a
-new password or key are valid for one hour.</p>
-<p><strong>E-mail:</strong> the contact e-mail address is used only for a link to reset the password
-and for the confirmation when the club is deleted. These mails are sent through the mail server of our
-hoster (see section 4).</p>
+deletes it when the club is deleted. A login on the hub ends when you log out; without "Stay logged in" at the
+latest after 12 hours, with it 30 days after your last visit. Of each login the hub keeps only a hash of its key,
+until it ends. Links and codes for a new password or key are valid for one hour.</p>
+<p><strong>E-mail:</strong> the contact e-mail address is used only for the confirmation when the club signs up
+for the hub, a link to reset the password, and the confirmation when the club is deleted. These mails are sent
+from noreply@novacoil.de through the mail server of our hoster (see section 4); replies go to
+info@novacoil.de.</p>
 <p><strong>World map:</strong> the hub's map pages load map tiles from OpenFreeMap; your browser
 transmits its IP address and the map area to OpenFreeMap. The map program itself comes from the hub.</p>
 
 <h3 id="en-cookies">3. Cookies</h3>
-<p>The hub sets a cookie only when someone logs in: <code>novacoil_club</code> for a club's admin and
-<code>novacoil_member</code> for a member of a private club. Each keeps the login for at most one hour and
-is deleted on logout. They are technically necessary for the login (§ 25 (2) no. 2 TDDDG). The hub's
-operator login uses <code>novacoil_admin</code> the same way.
+<p>The hub sets a cookie only when someone logs in: <code>novacoil_member</code> for a player,
+<code>novacoil_club</code> for a club's admin and <code>novacoil_admin</code> for the hub's operator. Each holds
+only a random key for the login. Without "Stay logged in" it ends when the browser is closed (and the login after
+12 hours at the latest); with "Stay logged in", which you choose yourself, it is kept for 30 days after your last
+visit. Logging out deletes it. They are technically necessary for the login you asked for (§ 25 (2) no. 2 TDDDG).
 There are no other cookies, and no tracking or advertising cookies on the hub or the website.</p>
 
 <h3 id="en-hosting">4. Hosting and server logs</h3>
@@ -143,9 +153,11 @@ which processes the data on our behalf under a data processing agreement (Art. 2
 the pages, the server necessarily processes your IP address. The web server writes no access logs;
 the hub's own log records events such as "club registered" or "player anonymous", with club and player
 names but without IP addresses.</p>
-<p><strong>Website novacoil.de:</strong> static pages without cookies; fonts and images come from the
-server itself. Links to Google Play, Apple TestFlight or the hub send data to those services only when
-you follow them.</p>
+<p><strong>Website novacoil.de:</strong> static pages without cookies of their own; fonts and images come from
+the server itself. The login form in its top bar logs in on the hub, and the page asks the hub (hub.novacoil.de, on
+the same server) who is logged in there, to show your name – your browser sends the hub's login cookie with it if
+you have one; nothing else is sent or stored. Links to Google Play, Apple TestFlight or the hub send data to those
+services only when you follow them.</p>
 <p><strong>This page</strong> is also published on GitHub Pages (GitHub Inc., USA); when you open it
 there, GitHub processes your IP address to deliver it.</p>
 
@@ -177,14 +189,14 @@ the system settings deletes it. Your club's admin deletes you from the club's ga
 <p><strong>As a club's admin</strong> (the club's whole account on the hub):</p>
 <ol>
   <li>In the app, on the club page, choose <strong>"Opt out"</strong>; or log in at
-  <a href="https://hub.novacoil.de/club">hub.novacoil.de/club</a> with the club's e-mail and password
+  <a href="https://hub.novacoil.de/club">hub.novacoil.de/club</a> with the club's name and password
   and choose <strong>"Delete everything"</strong>.</li>
   <li>This deletes at once everything of the club on the hub: its games, players, pictures, emblem,
   place on the map, contact e-mail, password hash and the registration of its name. Nothing is kept.
   You receive a confirmation by e-mail.</li>
 </ol>
-<p><strong>By e-mail:</strong> write to <a href="mailto:info@vantrope.com">info@vantrope.com</a> with your
-callsign and club. We delete or anonymise your data on the hub within one month at the latest, usually
+<p><strong>By e-mail:</strong> write to <a href="mailto:info@novacoil.de">info@novacoil.de</a> or
+<a href="mailto:info@vantrope.com">info@vantrope.com</a> with your callsign and club. We delete or anonymise your data on the hub within one month at the latest, usually
 within a few days, and let you know.</p>
 
 <h3 id="en-rights">7. Your rights</h3>
@@ -198,12 +210,13 @@ und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173
 <p>NovaCoil is not directed at children under 13.</p>
 
 <h3>Contact</h3>
-<p>Questions about privacy: <a href="mailto:info@vantrope.com">info@vantrope.com</a></p>
+<p>Questions about privacy and the hub: <a href="mailto:info@novacoil.de">info@novacoil.de</a> or
+<a href="mailto:info@vantrope.com">info@vantrope.com</a></p>
 
 <!-- ============================== DEUTSCH ============================== -->
 <h2 id="de" lang="de">Datenschutzerklärung</h2>
 <div lang="de">
-<p class="muted">Stand: 25. Oktober 2026 (Fassung 5)</p>
+<p class="muted">Stand: 26. Oktober 2026 (Fassung 6)</p>
 
 <h3>Verantwortlich</h3>
 <p>NovaCoil wird von zwei Personen gemeinsam betrieben, die für die hier beschriebene Verarbeitung gemeinsam
@@ -255,6 +268,10 @@ Diese Erklärung gilt für die App, den Hub und die Website novacoil.de.</p>
 (<a href="https://openfreemap.org">openfreemap.org</a>). Dabei werden deine IP-Adresse und der
 angefragte Kartenausschnitt an OpenFreeMap übermittelt. Heruntergeladene Karten werden danach offline
 genutzt. Kartendaten © OpenStreetMap-Mitwirkende.</p>
+<p><strong>Luftbilder:</strong> Schaltest du die Karte auf Luftbild, oder speichert die Offline-Karte eines
+Spielfelds Luftbilder, lädt die App sie vom Landesamt für Geoinformation und Landentwicklung Baden-Württemberg
+(<a href="https://www.lgl-bw.de">lgl-bw.de</a>); dabei werden deine IP-Adresse und der angefragte
+Kartenausschnitt dorthin übermittelt. Luftbilder © LGL, dl-de/by-2.0.</p>
 
 <h3 id="de-hub">2. Der NovaCoil Hub (hub.novacoil.de)</h3>
 <p>Der Hub zeigt Clubs, ihre Spiele, Ranglisten und eine Weltkarte der Clubs. Ein Club kommt nur dorthin,
@@ -273,10 +290,12 @@ wenn sein Admin in der App zustimmt. Ab dann schickt das Spielgerät des Clubs a
 <p><strong>Für alle sichtbar:</strong> Clubnamen, Wappen und Orte auf der Karte sowie Callsigns, Bilder,
 Spiele, Statistiken und Ranglisten der Spieler. Kontakt-E-Mail, Passwort, PIN-Prüfwert und Gerätenamen
 werden nie angezeigt.</p>
+<p><strong>Anmelden im Hub:</strong> Spieler melden sich mit Club, Callsign und App-PIN an – für ihr Profil und
+die Seite ihres Clubs; der Admin eines Clubs mit Clubname und Passwort. Nötig ist die Anmeldung nur für das, was
+hier beschrieben ist; alles Öffentliche ist ohne sie zu sehen.</p>
 <p><strong>Private Clubs:</strong> Der Admin eines Clubs kann den Club in der App privat schalten. Er bleibt
 dann in der Club-Liste (als privat markiert) und auf der Karte, seine Spieler und Spiele sehen aber nur seine
-Mitglieder, die sich auf der Hub-Seite des Clubs mit Callsign und App-PIN anmelden, und der Club-Login des
-Admins.</p>
+Mitglieder, angemeldet mit Callsign und App-PIN, und der Club-Login des Admins.</p>
 <p><strong>Deine Möglichkeiten:</strong></p>
 <ul>
   <li>Nur Spieler mit PIN erscheinen im Hub mit Namen; ohne PIN wirst du als „Anonym“ angezeigt.</li>
@@ -290,21 +309,26 @@ Admins.</p>
   des Hubs löschen. Der Admin erhält eine Bestätigung per E-Mail.</li>
 </ul>
 <p><strong>Speicherdauer:</strong> Der Hub speichert die Daten eines Clubs, solange der Club im Hub ist,
-und löscht sie, wenn der Club gelöscht wird. Anmeldungen auf der Club-Seite enden nach einer Stunde;
-Links und Codes für ein neues Passwort oder einen neuen Schlüssel gelten eine Stunde.</p>
-<p><strong>E-Mail:</strong> Die Kontakt-E-Mail-Adresse wird nur für einen Link zum Zurücksetzen des
-Passworts und für die Bestätigung beim Löschen des Clubs genutzt. Diese Mails gehen über den Mailserver
-unseres Hosters (siehe Abschnitt 4).</p>
+und löscht sie, wenn der Club gelöscht wird. Eine Anmeldung im Hub endet mit dem Abmelden; ohne „Stay logged in“
+spätestens nach 12 Stunden, mit „Stay logged in“ 30 Tage nach deinem letzten Besuch. Von jeder Anmeldung speichert
+der Hub nur einen Hash ihres Schlüssels, bis sie endet. Links und Codes für ein neues Passwort oder einen neuen
+Schlüssel gelten eine Stunde.</p>
+<p><strong>E-Mail:</strong> Die Kontakt-E-Mail-Adresse wird nur für die Bestätigung bei der Anmeldung des Clubs
+im Hub, einen Link zum Zurücksetzen des Passworts und die Bestätigung beim Löschen des Clubs genutzt. Diese Mails
+gehen von noreply@novacoil.de über den Mailserver unseres Hosters (siehe Abschnitt 4); Antworten gehen an
+info@novacoil.de.</p>
 <p><strong>Weltkarte:</strong> Die Kartenseiten des Hubs laden Kartenkacheln von OpenFreeMap; dein
 Browser übermittelt dabei seine IP-Adresse und den Kartenausschnitt an OpenFreeMap. Das Kartenprogramm
 selbst kommt vom Hub.</p>
 
 <h3 id="de-cookies">3. Cookies</h3>
-<p>Der Hub setzt nur dann ein Cookie, wenn sich jemand anmeldet: <code>novacoil_club</code> für den Admin
-eines Clubs und <code>novacoil_member</code> für ein Mitglied eines privaten Clubs. Jedes hält die Anmeldung
-höchstens eine Stunde und wird beim Abmelden gelöscht. Sie sind für die Anmeldung technisch erforderlich
-(§ 25 Abs. 2 Nr. 2 TDDDG). Die Betreiber-Anmeldung des Hubs nutzt <code>novacoil_admin</code> ebenso. Weitere Cookies, insbesondere Tracking- oder Werbe-Cookies, gibt es
-weder im Hub noch auf der Website.</p>
+<p>Der Hub setzt nur dann ein Cookie, wenn sich jemand anmeldet: <code>novacoil_member</code> für einen
+Spieler, <code>novacoil_club</code> für den Admin eines Clubs und <code>novacoil_admin</code> für den Betreiber
+des Hubs. Jedes enthält nur einen zufälligen Schlüssel für die Anmeldung. Ohne „Stay logged in“ endet es, wenn der
+Browser geschlossen wird (die Anmeldung spätestens nach 12 Stunden); mit „Stay logged in“, das du selbst wählst,
+bleibt es 30 Tage nach deinem letzten Besuch erhalten. Beim Abmelden wird es gelöscht. Sie sind für die von dir
+gewünschte Anmeldung technisch erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Weitere Cookies, insbesondere Tracking-
+oder Werbe-Cookies, gibt es weder im Hub noch auf der Website.</p>
 
 <h3 id="de-hosting">4. Hosting und Server-Protokolle</h3>
 <p>Der Hub und die Website novacoil.de laufen auf einem Server des Hosting-Anbieters lima-city in
@@ -312,9 +336,11 @@ Deutschland, der die Daten in unserem Auftrag auf Grundlage eines Vertrags zur A
 verarbeitet (Art. 28 DSGVO), abgeschlossen von André West als Kunde. Um die Seiten auszuliefern, verarbeitet der Server zwangsläufig deine
 IP-Adresse. Der Webserver schreibt keine Zugriffsprotokolle; das Protokoll des Hubs hält Ereignisse wie
 „Club angemeldet“ oder „Spieler anonym“ fest, mit Club- und Spielernamen, aber ohne IP-Adressen.</p>
-<p><strong>Website novacoil.de:</strong> statische Seiten ohne Cookies; Schriften und Bilder kommen vom
-eigenen Server. Links zu Google Play, Apple TestFlight oder dem Hub übermitteln erst Daten an diese
-Dienste, wenn du ihnen folgst.</p>
+<p><strong>Website novacoil.de:</strong> statische Seiten ohne eigene Cookies; Schriften und Bilder kommen
+vom eigenen Server. Das Anmeldeformular in ihrer oberen Leiste meldet dich im Hub an, und die Seite fragt den Hub
+(hub.novacoil.de, auf demselben Server), wer dort angemeldet ist, um deinen Namen zu zeigen – dein Browser schickt
+dabei das Anmelde-Cookie des Hubs mit, falls du eins hast; sonst wird nichts übermittelt oder gespeichert. Links zu
+Google Play, Apple TestFlight oder dem Hub übermitteln erst Daten an diese Dienste, wenn du ihnen folgst.</p>
 <p><strong>Diese Seite</strong> ist auch auf GitHub Pages (GitHub Inc., USA) veröffentlicht; rufst du
 sie dort auf, verarbeitet GitHub deine IP-Adresse, um sie auszuliefern.</p>
 
@@ -349,14 +375,14 @@ vom Spielgerät des Clubs.</p>
 <p><strong>Als Admin eines Clubs</strong> (der ganze Zugang des Clubs im Hub):</p>
 <ol>
   <li>Wähle in der App auf der Club-Seite <strong>„Abmelden“</strong>; oder melde dich unter
-  <a href="https://hub.novacoil.de/club">hub.novacoil.de/club</a> mit E-Mail und Passwort des Clubs an
+  <a href="https://hub.novacoil.de/club">hub.novacoil.de/club</a> mit Name und Passwort des Clubs an
   und wähle <strong>„Delete everything“</strong>.</li>
   <li>Damit wird sofort alles vom Club im Hub gelöscht: Spiele, Spieler, Bilder, Wappen, Ort auf der
   Karte, Kontakt-E-Mail, Passwort-Hash und die Registrierung des Namens. Nichts bleibt erhalten. Du
   erhältst eine Bestätigung per E-Mail.</li>
 </ol>
-<p><strong>Per E-Mail:</strong> Schreib an <a href="mailto:info@vantrope.com">info@vantrope.com</a> mit
-deinem Callsign und Club. Wir löschen oder anonymisieren deine Daten im Hub spätestens innerhalb eines
+<p><strong>Per E-Mail:</strong> Schreib an <a href="mailto:info@novacoil.de">info@novacoil.de</a> oder
+<a href="mailto:info@vantrope.com">info@vantrope.com</a> mit deinem Callsign und Club. Wir löschen oder anonymisieren deine Daten im Hub spätestens innerhalb eines
 Monats, meist innerhalb weniger Tage, und geben dir Bescheid.</p>
 
 <h3 id="de-rights">7. Deine Rechte</h3>
@@ -370,7 +396,8 @@ Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttga
 <p>NovaCoil richtet sich nicht an Kinder unter 13 Jahren.</p>
 
 <h3>Kontakt</h3>
-<p>Fragen zum Datenschutz: <a href="mailto:info@vantrope.com">info@vantrope.com</a></p>
+<p>Fragen zum Datenschutz und zum Hub: <a href="mailto:info@novacoil.de">info@novacoil.de</a> oder
+<a href="mailto:info@vantrope.com">info@vantrope.com</a></p>
 </div>
 
 <!-- ============================== IMPRINT ============================== -->
