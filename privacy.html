@@ -40,7 +40,7 @@
 
 <!-- ============================== ENGLISH ============================== -->
 <h2 id="en">Privacy Policy</h2>
-<p class="muted">Status: 26 October 2026 (rev. 6)</p>
+<p class="muted">Status: 30 October 2026 (rev. 7)</p>
 
 <h3>Responsible</h3>
 <p>NovaCoil is run jointly by two people, who are jointly responsible for the processing described here
@@ -54,11 +54,12 @@ exercise your rights with either of us – we pass the request on to the other w
 <h3>Summary</h3>
 <p>NovaCoil is a game app for Recoil-compatible toy blasters, for Android and iOS. It shows no ads and
 contains no analytics or tracking. Everything a game needs travels over the local Wi-Fi between the
-players' devices; one of them runs the game. The developer receives no data from the app –
-<strong>unless a club's admin connects the club to the NovaCoil Hub</strong> (hub.novacoil.de). Only then
-does the club's game device send the club's games and players to the hub, where they are shown
-publicly. Without this opt-in the app never contacts the hub. This policy covers the app, the hub and
-the website novacoil.de.</p>
+players' devices; one of them runs the game. The developer receives no data from the app – <strong>unless
+a club's admin connects the club to the NovaCoil Hub</strong> (hub.novacoil.de), <strong>or you yourself choose
+"Keep my profile on the hub"</strong>. A club on the hub sends its games there; in them, only players who said
+yes themselves appear by name, everyone else as "Anonymous". With your yes, your profile is kept on the hub – also
+without a club – so you can sign in with it on any phone and your career is the same everywhere. Without either
+yes the app never contacts the hub. This policy covers the app, the hub and the website novacoil.de.</p>
 
 <h3 id="en-app">1. The app</h3>
 <ul>
@@ -69,7 +70,8 @@ the website novacoil.de.</p>
   statistics on the club's devices. Your position is never sent to the hub.</li>
   <li><strong>Player name and avatar photo:</strong> the name you choose and, if you take one, a selfie
   as avatar are shown to the other players of a game and kept in the app and on your club's game
-  device. If your club is on the hub, they also appear there (see section 2) unless you are anonymous there.</li>
+  device. They go to the hub only if you choose "Keep my profile on the hub" (see section 2), and are shown there
+  only while "Show my name and picture" is on.</li>
   <li><strong>Microphone:</strong> only while you hold the talk button (in the app or on the blaster),
   your voice is sent over the local Wi-Fi to your team or the lobby. It is not recorded or stored and
   never sent to the hub.</li>
@@ -94,22 +96,33 @@ Geoinformation und Landentwicklung, <a href="https://www.lgl-bw.de">lgl-bw.de</a
 requested map area are transmitted to it. Aerial photos © LGL, dl-de/by-2.0.</p>
 
 <h3 id="en-hub">2. The NovaCoil Hub (hub.novacoil.de)</h3>
-<p>The hub shows clubs, their games, rankings and a world map of the clubs. A club gets there only if
-its admin opts in in the app. From then on, the club's game device sends to the hub:</p>
+<p>The hub shows clubs, players, their games, rankings and a world map of the clubs. A club gets there only if
+its admin opts in in the app; a player's profile only if the player says yes in the app ("On the hub?" when the
+profile is made or at the first game, or the switch "Keep my profile on the hub" in the profile). The hub then
+receives, from the club's game device or straight from the player's phone:</p>
 <ul>
   <li><strong>About the club:</strong> its name, the admin's contact e-mail address, a password for the
   hub's club login (the hub keeps only a hash of it, as of the club's key), the club's emblem, the place
   where the club plays (for the world map, set by the admin) and the name and app version of the devices
   that sync for the club (shown only to the admin).</li>
-  <li><strong>About each player:</strong> the callsign, a random profile ID of the app installation, the
-  avatar photo or chosen portrait, and a check value of the player's PIN (not the PIN itself).</li>
-  <li><strong>About each game:</strong> mode, rules, start time, duration, teams and result, and what
-  happened in it with its time – who joined or left, shots fired, hits, damage and eliminations. Games
-  contain no positions, no voice and no blaster IDs.</li>
+  <li><strong>About each player who said yes:</strong> the callsign, a random profile ID, the avatar photo
+  or chosen portrait, a check value of the player's PIN (not the PIN itself), whether name and picture may be
+  shown, and the club they are a member of, if any. A profile made on the phone can be on the hub without a club.
+  Players who did not say yes go to the hub only inside their club's games, under a random ID made for each game and
+  as "Anonymous" – nothing there leads to them.</li>
+  <li><strong>From your own phone</strong> (only with "Keep my profile on the hub"): the same profile data and a
+  random ID of the device; the hub gives the phone its own key in return and keeps only a hash of it. With it the
+  phone keeps your callsign, picture, PIN and switches in step with the hub and fetches your games, medals and
+  rating from there.</li>
+  <li><strong>About each game:</strong> mode, rules, start time, duration, teams and result, what happened in
+  it with its time – who joined or left, shots fired, hits, damage and eliminations – and each player's statistics
+  of the game (such as hits, accuracy, XP and medals). Games contain no positions, no voice and no blaster
+  IDs.</li>
 </ul>
-<p><strong>Visible to everyone:</strong> club names, emblems and places on the map, and the players'
-callsigns, pictures, games, statistics and rankings. The contact e-mail, password, PIN check value and
-device names are never shown.</p>
+<p><strong>Visible to everyone:</strong> club names, emblems and places on the map, and the callsigns, pictures,
+clubs, games, statistics and rankings of the players shown by name. Anonymous players appear as "Anonymous",
+without picture and club. The contact e-mail, password, PIN check value, keys and device names are never
+shown.</p>
 <p><strong>Logging in on the hub:</strong> players log in with their club, callsign and app PIN – to reach
 their profile and their club's page; a club's admin logs in with the club's name and password. Logging in is
 needed only for the things below; everything public can be seen without it.</p>
@@ -118,18 +131,25 @@ club list (marked private) and on the map, but its players and games are visible
 with their callsign and app PIN, and to the club's admin login.</p>
 <p><strong>Your choices:</strong></p>
 <ul>
-  <li>Only players with a PIN appear by name on the hub; without a PIN you are shown as "Anonymous".</li>
-  <li><strong>"Anonymous on the hub"</strong> in your profile in the app takes your name and picture out
-  of every game on the hub at the next sync; the games stay there, showing you as "Anonymous". You can
-  switch it off again.</li>
-  <li>On your player page on the hub you can make yourself anonymous the same way with your PIN.</li>
+  <li>Nobody is on the hub by name without saying yes, and only with a PIN. Players under 16 say yes only with the
+  consent of a parent; the app asks for it.</li>
+  <li><strong>"Keep my profile on the hub"</strong> in your profile in the app: on, the hub keeps your profile;
+  switched off, the hub deletes your callsign, picture and PIN check value, and your games there stay as
+  "Anonymous" and no longer point to you.</li>
+  <li><strong>"Show my name and picture"</strong>: off, the hub shows you as "Anonymous" everywhere, while it keeps
+  your profile for you. You can switch it on again.</li>
+  <li>On your player page on the hub you can make yourself anonymous with your PIN, show your name again, or
+  delete yourself from the hub for good.</li>
   <li>A player deleted on the club's game device is taken off the hub for good.</li>
   <li>The club's admin can delete single players, and delete the whole club with everything of it on
   the hub – games, players, pictures, emblem and the club's name – in the app (opt-out) or in the hub's
   club login. The admin receives a confirmation by e-mail.</li>
 </ul>
 <p><strong>Storage period:</strong> the hub keeps a club's data as long as the club is on the hub, and
-deletes it when the club is deleted. A login on the hub ends when you log out; without "Stay logged in" at the
+deletes it when the club is deleted. It keeps a player's profile as long as the player keeps it there; a profile in
+no club and without games that no phone has used for a year is deleted by itself. To keep anyone from filling the
+hub with profiles, it holds the IP address of a phone that makes a new profile in memory for one hour – it is
+never written down. A login on the hub ends when you log out; without "Stay logged in" at the
 latest after 12 hours, with it 30 days after your last visit. Of each login the hub keeps only a hash of its key,
 until it ends. Links and codes for a new password or key are valid for one hour.</p>
 <p><strong>E-mail:</strong> the contact e-mail address is used only for the confirmation when the club signs up
@@ -164,11 +184,13 @@ there, GitHub processes your IP address to deliver it.</p>
 <h3 id="en-legal">5. Legal basis</h3>
 <ul>
   <li>Providing the game you use, and the club's account on the hub for its admin: Art. 6 (1) (b) GDPR.</li>
+  <li>Keeping your profile on the hub, syncing it with your phones and showing your name and picture there: your
+  consent (Art. 6 (1) (a) GDPR), for players under 16 given by a parent (Art. 8 GDPR). You can withdraw it at any
+  time with the switches in the app or on the hub; what happened before stays lawful.</li>
   <li>Camera, microphone and location in the app: the permissions you grant in Android or iOS, which you
   can withdraw at any time in the system settings (Art. 6 (1) (a) GDPR).</li>
-  <li>Publishing a club's games, players and rankings on the hub: the legitimate interest of the club and
-  its players in shared results and rankings (Art. 6 (1) (f) GDPR). You can object at any time with
-  "Anonymous on the hub" or with your PIN on the hub.</li>
+  <li>Publishing a club's games and rankings on the hub, with the players who did not say yes as "Anonymous":
+  the legitimate interest of the club and its players in shared results and rankings (Art. 6 (1) (f) GDPR).</li>
   <li>Delivering the pages and keeping the server secure: Art. 6 (1) (f) GDPR.</li>
 </ul>
 
@@ -179,13 +201,18 @@ but the app, your PIN or an e-mail.</p>
 the system settings deletes it. Your club's admin deletes you from the club's game device on request.</p>
 <p><strong>As a player on the hub</strong> (your name, picture and the link of your games to you):</p>
 <ol>
-  <li>In the app, tap your own picture to open your profile and switch on <strong>"Anonymous on the
-  hub"</strong>. At the club's next sync, your callsign, picture and PIN check value are deleted from
-  the hub; your games stay there as "Anonymous" and no longer point to you.</li>
-  <li>Or, without the app: open your player page on <a href="https://hub.novacoil.de">hub.novacoil.de</a>,
-  choose <strong>"Make me anonymous"</strong> and confirm with your PIN. This takes effect at once.</li>
+  <li>In the app, tap your own picture to open your profile and switch off <strong>"Keep my profile on the
+  hub"</strong>. Your callsign, picture and PIN check value are deleted from the hub – at once if the phone is
+  online, else at the next connection or your club's next sync; your games stay there as "Anonymous" and no
+  longer point to you.</li>
+  <li>Or, without the app: open your player page on <a href="https://hub.novacoil.de">hub.novacoil.de</a>, tick
+  <strong>"Delete me from the hub for good"</strong> and confirm with your PIN. This takes effect at once, and
+  the app cannot bring the profile back.</li>
   <li>Or ask your club's admin, who can delete you in the hub's club login.</li>
+  <li>A profile in no club and without games that no phone uses for a year is deleted by itself.</li>
 </ol>
+<p>Only hiding your name ("Show my name and picture" off, or "Make me anonymous" on the hub) deletes nothing: the
+hub keeps your profile and shows you as "Anonymous".</p>
 <p><strong>As a club's admin</strong> (the club's whole account on the hub):</p>
 <ol>
   <li>In the app, on the club page, choose <strong>"Opt out"</strong>; or log in at
@@ -196,7 +223,7 @@ the system settings deletes it. Your club's admin deletes you from the club's ga
   You receive a confirmation by e-mail.</li>
 </ol>
 <p><strong>By e-mail:</strong> write to <a href="mailto:info@novacoil.de">info@novacoil.de</a> or
-<a href="mailto:info@vantrope.com">info@vantrope.com</a> with your callsign and club. We delete or anonymise your data on the hub within one month at the latest, usually
+<a href="mailto:info@vantrope.com">info@vantrope.com</a> with your callsign and club (if you have one). We delete or anonymise your data on the hub within one month at the latest, usually
 within a few days, and let you know.</p>
 
 <h3 id="en-rights">7. Your rights</h3>
@@ -207,7 +234,8 @@ und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173
 (<a href="https://www.baden-wuerttemberg.datenschutz.de">baden-wuerttemberg.datenschutz.de</a>).</p>
 
 <h3>Children</h3>
-<p>NovaCoil is not directed at children under 13.</p>
+<p>NovaCoil is not directed at children under 13. Players under 16 keep their profile on the hub only with the
+consent of a parent; the app asks for it before the profile goes there.</p>
 
 <h3>Contact</h3>
 <p>Questions about privacy and the hub: <a href="mailto:info@novacoil.de">info@novacoil.de</a> or
@@ -216,7 +244,7 @@ und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173
 <!-- ============================== DEUTSCH ============================== -->
 <h2 id="de" lang="de">Datenschutzerklärung</h2>
 <div lang="de">
-<p class="muted">Stand: 26. Oktober 2026 (Fassung 6)</p>
+<p class="muted">Stand: 30. Oktober 2026 (Fassung 7)</p>
 
 <h3>Verantwortlich</h3>
 <p>NovaCoil wird von zwei Personen gemeinsam betrieben, die für die hier beschriebene Verarbeitung gemeinsam
@@ -233,9 +261,11 @@ anderen weiter.</p>
 keine Werbung und enthält keine Analyse- oder Tracking-Dienste. Alles, was ein Spiel braucht, läuft über
 das lokale WLAN zwischen den Geräten der Spieler; eines davon leitet das Spiel. Der Entwickler erhält
 keine Daten aus der App – <strong>außer der Admin eines Clubs verbindet den Club mit dem NovaCoil
-Hub</strong> (hub.novacoil.de). Nur dann schickt das Spielgerät des Clubs dessen Spiele und Spieler an
-den Hub, wo sie öffentlich zu sehen sind. Ohne diese Zustimmung nimmt die App nie Kontakt zum Hub auf.
-Diese Erklärung gilt für die App, den Hub und die Website novacoil.de.</p>
+Hub</strong> (hub.novacoil.de) <strong>oder du selbst wählst „Profil auf dem Hub speichern“</strong>. Ein Club
+im Hub schickt seine Spiele dorthin; darin erscheinen nur Spieler mit Namen, die selbst zugestimmt haben, alle
+anderen als „Anonym“. Mit deiner Zustimmung wird dein Profil im Hub gespeichert – auch ohne Club –, damit du dich
+damit auf jedem Handy anmelden kannst und deine Karriere überall gleich ist. Ohne eine dieser Zustimmungen nimmt die
+App nie Kontakt zum Hub auf. Diese Erklärung gilt für die App, den Hub und die Website novacoil.de.</p>
 
 <h3 id="de-app">1. Die App</h3>
 <ul>
@@ -246,8 +276,9 @@ Diese Erklärung gilt für die App, den Hub und die Website novacoil.de.</p>
   Spielstatistik auf den Geräten des Clubs. Deine Position geht nie an den Hub.</li>
   <li><strong>Spielername und Avatarfoto:</strong> Der Name, den du wählst, und – falls du eins
   aufnimmst – ein Selfie als Avatar werden den anderen Spielern eines Spiels angezeigt und in der App
-  und auf dem Spielgerät deines Clubs gespeichert. Ist dein Club im Hub, erscheinen sie auch dort
-  (siehe Abschnitt 2), außer du bist dort anonym.</li>
+  und auf dem Spielgerät deines Clubs gespeichert. An den Hub gehen sie nur, wenn du „Profil auf dem Hub
+  speichern“ wählst (siehe Abschnitt 2), und gezeigt werden sie dort nur, solange „Namen und Bild zeigen“ an
+  ist.</li>
   <li><strong>Mikrofon:</strong> Nur solange du die Sprechtaste hältst (in der App oder am Blaster), geht
   deine Stimme über das lokale WLAN an dein Team oder die Lobby. Sie wird nicht aufgezeichnet oder
   gespeichert und geht nie an den Hub.</li>
@@ -274,22 +305,34 @@ Spielfelds Luftbilder, lädt die App sie vom Landesamt für Geoinformation und L
 Kartenausschnitt dorthin übermittelt. Luftbilder © LGL, dl-de/by-2.0.</p>
 
 <h3 id="de-hub">2. Der NovaCoil Hub (hub.novacoil.de)</h3>
-<p>Der Hub zeigt Clubs, ihre Spiele, Ranglisten und eine Weltkarte der Clubs. Ein Club kommt nur dorthin,
-wenn sein Admin in der App zustimmt. Ab dann schickt das Spielgerät des Clubs an den Hub:</p>
+<p>Der Hub zeigt Clubs, Spieler, ihre Spiele, Ranglisten und eine Weltkarte der Clubs. Ein Club kommt nur
+dorthin, wenn sein Admin in der App zustimmt; das Profil eines Spielers nur, wenn der Spieler in der App zustimmt
+(„Auf den Hub?“ beim Anlegen des Profils oder beim ersten Spiel, oder der Schalter „Profil auf dem Hub speichern“
+im Profil). Der Hub erhält dann, vom Spielgerät des Clubs oder direkt vom Handy des Spielers:</p>
 <ul>
   <li><strong>Zum Club:</strong> seinen Namen, die Kontakt-E-Mail-Adresse des Admins, ein Passwort für den
   Club-Login im Hub (der Hub speichert davon nur einen Hash, ebenso vom Schlüssel des Clubs), das Wappen
   des Clubs, den Ort, an dem der Club spielt (für die Weltkarte, vom Admin festgelegt), sowie Name und
   App-Version der Geräte, die für den Club abgleichen (nur für den Admin sichtbar).</li>
-  <li><strong>Zu jedem Spieler:</strong> das Callsign, eine zufällige Profil-ID der App-Installation, das
-  Avatarfoto oder das gewählte Porträt und einen Prüfwert der PIN des Spielers (nicht die PIN selbst).</li>
-  <li><strong>Zu jedem Spiel:</strong> Modus, Regeln, Startzeit, Dauer, Teams und Ergebnis sowie, was
-  darin mit welcher Zeit geschah – wer beitrat oder ging, abgegebene Schüsse, Treffer, Schaden und
-  Ausscheiden. Spiele enthalten keine Positionen, keine Sprache und keine Blaster-IDs.</li>
+  <li><strong>Zu jedem Spieler, der zugestimmt hat:</strong> das Callsign, eine zufällige Profil-ID, das
+  Avatarfoto oder das gewählte Porträt, einen Prüfwert der PIN des Spielers (nicht die PIN selbst), ob Name und
+  Bild gezeigt werden dürfen, und den Club, in dem er Mitglied ist, falls es einen gibt. Ein auf dem Handy
+  angelegtes Profil kann ohne Club im Hub sein. Spieler, die nicht zugestimmt haben, gehen nur in den Spielen ihres
+  Clubs an den Hub, unter einer für jedes Spiel neu gebildeten zufälligen ID und als „Anonym“ – nichts dort führt
+  zu ihnen.</li>
+  <li><strong>Von deinem eigenen Handy</strong> (nur mit „Profil auf dem Hub speichern“): dieselben Profildaten
+  und eine zufällige ID des Geräts; der Hub gibt dem Handy dafür einen eigenen Schlüssel und speichert davon nur
+  einen Hash. Damit hält das Handy dein Callsign, dein Bild, deine PIN und deine Schalter mit dem Hub gleich und
+  holt deine Spiele, Medaillen und Wertung von dort.</li>
+  <li><strong>Zu jedem Spiel:</strong> Modus, Regeln, Startzeit, Dauer, Teams und Ergebnis, was darin mit
+  welcher Zeit geschah – wer beitrat oder ging, abgegebene Schüsse, Treffer, Schaden und Ausscheiden – sowie
+  die Statistik jedes Spielers im Spiel (etwa Treffer, Trefferquote, XP und Medaillen). Spiele enthalten keine
+  Positionen, keine Sprache und keine Blaster-IDs.</li>
 </ul>
 <p><strong>Für alle sichtbar:</strong> Clubnamen, Wappen und Orte auf der Karte sowie Callsigns, Bilder,
-Spiele, Statistiken und Ranglisten der Spieler. Kontakt-E-Mail, Passwort, PIN-Prüfwert und Gerätenamen
-werden nie angezeigt.</p>
+Clubs, Spiele, Statistiken und Ranglisten der Spieler, die mit Namen gezeigt werden. Anonyme Spieler erscheinen als
+„Anonym“, ohne Bild und Club. Kontakt-E-Mail, Passwort, PIN-Prüfwert, Schlüssel und Gerätenamen werden nie
+angezeigt.</p>
 <p><strong>Anmelden im Hub:</strong> Spieler melden sich mit Club, Callsign und App-PIN an – für ihr Profil und
 die Seite ihres Clubs; der Admin eines Clubs mit Clubname und Passwort. Nötig ist die Anmeldung nur für das, was
 hier beschrieben ist; alles Öffentliche ist ohne sie zu sehen.</p>
@@ -298,18 +341,25 @@ dann in der Club-Liste (als privat markiert) und auf der Karte, seine Spieler un
 Mitglieder, angemeldet mit Callsign und App-PIN, und der Club-Login des Admins.</p>
 <p><strong>Deine Möglichkeiten:</strong></p>
 <ul>
-  <li>Nur Spieler mit PIN erscheinen im Hub mit Namen; ohne PIN wirst du als „Anonym“ angezeigt.</li>
-  <li><strong>„Anonym auf dem Hub“</strong> in deinem Profil in der App nimmt deinen Namen und dein Bild
-  beim nächsten Abgleich aus allen Spielen im Hub; die Spiele bleiben erhalten und zeigen dich als
-  „Anonym“. Du kannst es wieder abschalten.</li>
-  <li>Auf deiner Spielerseite im Hub kannst du dich ebenso mit deiner PIN anonym machen.</li>
+  <li>Niemand ist ohne eigene Zustimmung mit Namen im Hub, und nur mit PIN. Spieler unter 16 stimmen nur mit
+  Einwilligung eines Elternteils zu; die App fragt danach.</li>
+  <li><strong>„Profil auf dem Hub speichern“</strong> in deinem Profil in der App: An, speichert der Hub dein
+  Profil; ausgeschaltet, löscht der Hub dein Callsign, dein Bild und deinen PIN-Prüfwert, und deine Spiele dort
+  bleiben als „Anonym“ und verweisen nicht mehr auf dich.</li>
+  <li><strong>„Namen und Bild zeigen“</strong>: Aus, zeigt der Hub dich überall als „Anonym“ und behält dein
+  Profil für dich. Du kannst es wieder einschalten.</li>
+  <li>Auf deiner Spielerseite im Hub kannst du dich mit deiner PIN anonym machen, deinen Namen wieder zeigen oder
+  dich endgültig vom Hub löschen.</li>
   <li>Ein auf dem Spielgerät des Clubs gelöschter Spieler wird endgültig aus dem Hub entfernt.</li>
   <li>Der Admin des Clubs kann einzelne Spieler löschen und den ganzen Club mit allem, was im Hub von ihm
   liegt – Spiele, Spieler, Bilder, Wappen und den Clubnamen –, in der App (Abmeldung) oder im Club-Login
   des Hubs löschen. Der Admin erhält eine Bestätigung per E-Mail.</li>
 </ul>
 <p><strong>Speicherdauer:</strong> Der Hub speichert die Daten eines Clubs, solange der Club im Hub ist,
-und löscht sie, wenn der Club gelöscht wird. Eine Anmeldung im Hub endet mit dem Abmelden; ohne „Stay logged in“
+und löscht sie, wenn der Club gelöscht wird. Das Profil eines Spielers speichert er, solange der Spieler es dort
+lässt; ein Profil ohne Club und ohne Spiele, das ein Jahr lang kein Handy benutzt hat, löscht er von selbst. Damit
+niemand den Hub mit Profilen füllt, hält er die IP-Adresse eines Handys, das ein neues Profil anlegt, eine Stunde
+lang im Arbeitsspeicher – sie wird nie gespeichert. Eine Anmeldung im Hub endet mit dem Abmelden; ohne „Stay logged in“
 spätestens nach 12 Stunden, mit „Stay logged in“ 30 Tage nach deinem letzten Besuch. Von jeder Anmeldung speichert
 der Hub nur einen Hash ihres Schlüssels, bis sie endet. Links und Codes für ein neues Passwort oder einen neuen
 Schlüssel gelten eine Stunde.</p>
@@ -348,11 +398,15 @@ sie dort auf, verarbeitet GitHub deine IP-Adresse, um sie auszuliefern.</p>
 <ul>
   <li>Bereitstellung des von dir genutzten Spiels und des Club-Zugangs im Hub für den Admin: Art. 6 Abs. 1
   lit. b DSGVO.</li>
+  <li>Speichern deines Profils im Hub, sein Abgleich mit deinen Handys und das Zeigen deines Namens und Bildes
+  dort: deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), bei Spielern unter 16 die eines Elternteils (Art. 8
+  DSGVO). Du kannst sie jederzeit mit den Schaltern in der App oder im Hub widerrufen; was vorher geschah, bleibt
+  rechtmäßig.</li>
   <li>Kamera, Mikrofon und Standort in der App: die Berechtigungen, die du in Android oder iOS erteilst
   und jederzeit in den Systemeinstellungen widerrufen kannst (Art. 6 Abs. 1 lit. a DSGVO).</li>
-  <li>Veröffentlichung der Spiele, Spieler und Ranglisten eines Clubs im Hub: das berechtigte Interesse des
-  Clubs und seiner Spieler an gemeinsamen Ergebnissen und Ranglisten (Art. 6 Abs. 1 lit. f DSGVO). Du
-  kannst jederzeit widersprechen – mit „Anonym auf dem Hub“ oder mit deiner PIN im Hub.</li>
+  <li>Veröffentlichung der Spiele und Ranglisten eines Clubs im Hub, mit den Spielern ohne Zustimmung als
+  „Anonym“: das berechtigte Interesse des Clubs und seiner Spieler an gemeinsamen Ergebnissen und Ranglisten
+  (Art. 6 Abs. 1 lit. f DSGVO).</li>
   <li>Auslieferung der Seiten und Sicherheit des Servers: Art. 6 Abs. 1 lit. f DSGVO.</li>
 </ul>
 
@@ -364,14 +418,18 @@ deine PIN oder eine E-Mail.</p>
 vom Spielgerät des Clubs.</p>
 <p><strong>Als Spieler im Hub</strong> (dein Name, dein Bild und die Zuordnung deiner Spiele zu dir):</p>
 <ol>
-  <li>Tippe in der App auf dein eigenes Bild, um dein Profil zu öffnen, und schalte <strong>„Anonym auf
-  dem Hub“</strong> ein. Beim nächsten Abgleich des Clubs werden dein Callsign, dein Bild und dein
-  PIN-Prüfwert im Hub gelöscht; deine Spiele bleiben dort als „Anonym“ und verweisen nicht mehr auf
-  dich.</li>
-  <li>Oder ohne App: Öffne deine Spielerseite auf <a href="https://hub.novacoil.de">hub.novacoil.de</a>,
-  wähle <strong>„Make me anonymous“</strong> und bestätige mit deiner PIN. Das wirkt sofort.</li>
+  <li>Tippe in der App auf dein eigenes Bild, um dein Profil zu öffnen, und schalte <strong>„Profil auf dem Hub
+  speichern“</strong> aus. Dein Callsign, dein Bild und dein PIN-Prüfwert werden im Hub gelöscht – sofort, wenn
+  das Handy online ist, sonst bei der nächsten Verbindung oder dem nächsten Abgleich deines Clubs; deine Spiele
+  bleiben dort als „Anonym“ und verweisen nicht mehr auf dich.</li>
+  <li>Oder ohne App: Öffne deine Spielerseite auf <a href="https://hub.novacoil.de">hub.novacoil.de</a>, setze
+  den Haken <strong>„Delete me from the hub for good“</strong> und bestätige mit deiner PIN. Das wirkt sofort,
+  und die App kann das Profil nicht zurückholen.</li>
   <li>Oder bitte den Admin deines Clubs, der dich im Club-Login des Hubs löschen kann.</li>
+  <li>Ein Profil ohne Club und ohne Spiele, das ein Jahr lang kein Handy benutzt, wird von selbst gelöscht.</li>
 </ol>
+<p>Nur den Namen auszublenden („Namen und Bild zeigen“ aus, oder „Make me anonymous“ im Hub) löscht nichts: Der
+Hub behält dein Profil und zeigt dich als „Anonym“.</p>
 <p><strong>Als Admin eines Clubs</strong> (der ganze Zugang des Clubs im Hub):</p>
 <ol>
   <li>Wähle in der App auf der Club-Seite <strong>„Abmelden“</strong>; oder melde dich unter
@@ -382,7 +440,7 @@ vom Spielgerät des Clubs.</p>
   erhältst eine Bestätigung per E-Mail.</li>
 </ol>
 <p><strong>Per E-Mail:</strong> Schreib an <a href="mailto:info@novacoil.de">info@novacoil.de</a> oder
-<a href="mailto:info@vantrope.com">info@vantrope.com</a> mit deinem Callsign und Club. Wir löschen oder anonymisieren deine Daten im Hub spätestens innerhalb eines
+<a href="mailto:info@vantrope.com">info@vantrope.com</a> mit deinem Callsign und Club (falls du einen hast). Wir löschen oder anonymisieren deine Daten im Hub spätestens innerhalb eines
 Monats, meist innerhalb weniger Tage, und geben dir Bescheid.</p>
 
 <h3 id="de-rights">7. Deine Rechte</h3>
@@ -393,7 +451,8 @@ Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttga
 (<a href="https://www.baden-wuerttemberg.datenschutz.de">baden-wuerttemberg.datenschutz.de</a>).</p>
 
 <h3>Kinder</h3>
-<p>NovaCoil richtet sich nicht an Kinder unter 13 Jahren.</p>
+<p>NovaCoil richtet sich nicht an Kinder unter 13 Jahren. Spieler unter 16 speichern ihr Profil im Hub nur mit
+Einwilligung eines Elternteils; die App fragt danach, bevor das Profil dorthin geht.</p>
 
 <h3>Kontakt</h3>
 <p>Fragen zum Datenschutz und zum Hub: <a href="mailto:info@novacoil.de">info@novacoil.de</a> oder
