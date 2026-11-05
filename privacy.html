@@ -40,7 +40,7 @@
 
 <!-- ============================== ENGLISH ============================== -->
 <h2 id="en">Privacy Policy</h2>
-<p class="muted">Status: 4 November 2026 (rev. 9)</p>
+<p class="muted">Status: 5 November 2026 (rev. 10)</p>
 
 <h3>Responsible</h3>
 <p>NovaCoil is run jointly by two people, who are jointly responsible for the processing described here
@@ -121,13 +121,22 @@ receives, from the club's game device or straight from the player's phone:</p>
   of the game (such as hits, accuracy, XP and medals). Games contain no positions, no voice and no blaster
   IDs.</li>
 </ul>
+<p><strong>Signing up on the hub:</strong> you can also make a player profile without the app, on
+<a href="https://hub.novacoil.de/register">hub.novacoil.de/register</a>. The hub then receives your callsign, your
+e-mail address, the portrait you pick, whether your name and picture may be shown, and your PIN, which it turns into
+a check value at once and does not keep. The profile is in no club and only counts once you open the link the hub
+sends to your e-mail; a sign-up not confirmed within a day is deleted by itself. Only players aged 16 or older sign
+up there themselves, agreeing to this policy; younger players make their profile in the app with a parent's consent.
+Against automated sign-ups the page runs a short check in your browser – a small calculation it does itself, with no
+outside service, no cookie and no data about you – and the hub holds your IP address in memory for one hour to limit
+sign-ups from one address; it is never written down.</p>
 <p><strong>Visible to everyone:</strong> club names, emblems and places on the map, and the callsigns, pictures,
 clubs, games, statistics and rankings of the players shown by name, and the hub's list of all of them (Players),
 which also lists those without games or club. Anonymous players appear as "Anonymous", without picture and club, and
 are not in the list. E-mail addresses, PIN check values, keys and device names are never
 shown.</p>
-<p><strong>Logging in on the hub:</strong> players log in with their callsign and app PIN and a code the hub sends
-to their confirmed e-mail – to reach their profile; a club's admins manage their club with this same login of their
+<p><strong>Logging in on the hub:</strong> players log in with their confirmed e-mail and app PIN and a code the hub sends
+to that e-mail – to reach their profile; a club's admins manage their club with this same login of their
 own profile. Logging in is needed only for the things below; everything public can be seen without it.</p>
 <p><strong>No private clubs:</strong> every club on the hub is public. A club that does not want to be seen stays an
 offline club: it lives only on its admin's device, and nothing of it goes to the hub.</p>
@@ -161,16 +170,17 @@ up for the hub and the confirmation when the club is deleted. These mails are se
 from noreply@novacoil.de through the mail server of our hoster (see section 4); replies go to
 info@novacoil.de.</p>
 <p><strong>A player's e-mail:</strong> if you like, you give the hub an e-mail address in the app (when registering, or
-under Profile → Hub). It is used only to confirm it, for the codes to log in, for a link to set a forgotten PIN anew, and to show you in the
+under Profile → Hub), or when you sign up on the hub. It is used only to confirm it, for the codes to log in, for a link to set a forgotten PIN anew, and to show you in the
 hub's ranking, which needs a confirmed e-mail. A club's admin manages the club on the hub only with a confirmed
 e-mail. It is shown nowhere and kept as long as your profile is on the hub; you change it in the app, and it goes with your profile when you take it off the hub.</p>
 <p><strong>World map:</strong> the hub's map pages load map tiles from OpenFreeMap; your browser
 transmits its IP address and the map area to OpenFreeMap. The map program itself comes from the hub.</p>
 
 <h3 id="en-cookies">3. Cookies</h3>
-<p>The hub sets a cookie only when someone logs in: <code>novacoil_member</code> for a player,
-<code>novacoil_club</code> for a club's admin and <code>novacoil_admin</code> for the hub's operator. Each holds
-only a random key for the login. Without "Stay logged in" it ends when the browser is closed (and the login after
+<p>The hub sets a cookie only when someone logs in: <code>novacoil_member</code> for a player – a club's
+admin too – and <code>novacoil_admin</code> for the hub's operator. Each holds only a random key for the login.
+If you tick "Trust this browser for 30 days" after the code from the mail, <code>novacoil_trust</code> holds a random key for
+30 days, so that the PIN is enough there; the hub keeps only a hash of it. Without "Stay logged in" the login's cookie ends when the browser is closed (and the login after
 12 hours at the latest); with "Stay logged in", which you choose yourself, it is kept for 30 days after your last
 visit. Logging out deletes it. They are technically necessary for the login you asked for (§ 25 (2) no. 2 TDDDG).
 There are no other cookies, and no tracking or advertising cookies on the hub or the website.</p>
@@ -192,7 +202,7 @@ there, GitHub processes your IP address to deliver it.</p>
 <h3 id="en-legal">5. Legal basis</h3>
 <ul>
   <li>Providing the game you use, and the club's account on the hub for its admin: Art. 6 (1) (b) GDPR.</li>
-  <li>Keeping your profile on the hub, syncing it with your phones and showing your name and picture there: your
+  <li>Keeping your profile on the hub – made in the app or by signing up on the hub –, syncing it with your phones and showing your name and picture there: your
   consent (Art. 6 (1) (a) GDPR), for players under 16 given by a parent (Art. 8 GDPR). You can withdraw it at any
   time with the switches in the app or on the hub; what happened before stays lawful.</li>
   <li>Camera, microphone and location in the app: the permissions you grant in Android or iOS, which you
@@ -218,6 +228,7 @@ the system settings deletes it. Your club's admin deletes you from the club's ga
   the app cannot bring the profile back.</li>
   <li>Or ask your club's admin, who can delete you in the hub's club login.</li>
   <li>A profile in no club and without games that no phone uses for a year is deleted by itself.</li>
+  <li>A sign-up on the hub that is not confirmed by the link in the mail within a day is deleted by itself.</li>
 </ol>
 <p>Only hiding your name ("Show my name and picture" off, or "Make me anonymous" on the hub) deletes nothing: the
 hub keeps your profile and shows you as "Anonymous".</p>
@@ -245,7 +256,8 @@ und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173
 
 <h3>Children</h3>
 <p>NovaCoil is not directed at children under 13. Players under 16 keep their profile on the hub only with the
-consent of a parent; the app asks for it before the profile goes there.</p>
+consent of a parent; the app asks for it before the profile goes there. Signing up on the hub without the app is
+only for players aged 16 or older.</p>
 
 <h3>Contact</h3>
 <p>Questions about privacy and the hub: <a href="mailto:info@novacoil.de">info@novacoil.de</a> or
@@ -254,7 +266,7 @@ consent of a parent; the app asks for it before the profile goes there.</p>
 <!-- ============================== DEUTSCH ============================== -->
 <h2 id="de" lang="de">Datenschutzerklärung</h2>
 <div lang="de">
-<p class="muted">Stand: 4. November 2026 (Fassung 9)</p>
+<p class="muted">Stand: 5. November 2026 (Fassung 10)</p>
 
 <h3>Verantwortlich</h3>
 <p>NovaCoil wird von zwei Personen gemeinsam betrieben, die für die hier beschriebene Verarbeitung gemeinsam
@@ -342,13 +354,23 @@ im Profil). Der Hub erhält dann, vom Spielgerät des Clubs oder direkt vom Hand
   die Statistik jedes Spielers im Spiel (etwa Treffer, Trefferquote, XP und Medaillen). Spiele enthalten keine
   Positionen, keine Sprache und keine Blaster-IDs.</li>
 </ul>
+<p><strong>Registrieren auf dem Hub:</strong> Du kannst ein Spielerprofil auch ohne App anlegen, auf
+<a href="https://hub.novacoil.de/register">hub.novacoil.de/register</a>. Der Hub erhält dann deinen Callsign, deine
+E-Mail-Adresse, das gewählte Porträt, ob Name und Bild gezeigt werden dürfen, und deine PIN, aus der er sofort einen
+Prüfwert macht und die er nicht speichert. Das Profil ist in keinem Club und gilt erst, wenn du den Link öffnest, den
+der Hub an deine E-Mail schickt; eine Registrierung, die nicht innerhalb eines Tages bestätigt wird, löscht sich von
+selbst. Selbst registrieren können sich dort nur Spieler ab 16 Jahren, die dieser Erklärung zustimmen; Jüngere legen
+ihr Profil in der App mit Zustimmung eines Elternteils an. Gegen automatische Registrierungen macht die Seite eine
+kurze Prüfung in deinem Browser – eine kleine Rechnung, die er selbst ausführt, ohne fremden Dienst, ohne Cookie und
+ohne Daten über dich –, und der Hub hält deine IP-Adresse eine Stunde lang im Arbeitsspeicher, um Registrierungen von
+einer Adresse zu begrenzen; sie wird nie gespeichert.</p>
 <p><strong>Für alle sichtbar:</strong> Clubnamen, Wappen und Orte auf der Karte sowie Callsigns, Bilder,
 Clubs, Spiele, Statistiken und Ranglisten der Spieler, die mit Namen gezeigt werden, und die Liste aller dieser
 Spieler im Hub (Players), in der auch Spieler ohne Spiele oder Club stehen. Anonyme Spieler erscheinen als „Anonym“,
 ohne Bild und Club, und stehen nicht in der Liste. E-Mail-Adressen, PIN-Prüfwerte, Schlüssel und Gerätenamen werden nie
 angezeigt.</p>
-<p><strong>Anmelden im Hub:</strong> Spieler melden sich mit Callsign und App-PIN an und mit einem Code, den der Hub
-an ihre bestätigte E-Mail schickt – für ihr Profil; die Admins eines Clubs verwalten ihn mit derselben Anmeldung ihres
+<p><strong>Anmelden im Hub:</strong> Spieler melden sich mit ihrer bestätigten E-Mail und App-PIN an und mit einem
+Code, den der Hub an diese E-Mail schickt – für ihr Profil; die Admins eines Clubs verwalten ihn mit derselben Anmeldung ihres
 eigenen Profils. Nötig ist die Anmeldung nur für das, was hier beschrieben ist; alles Öffentliche ist ohne sie zu
 sehen.</p>
 <p><strong>Keine privaten Clubs:</strong> Jeder Club im Hub ist öffentlich. Ein Club, der nicht gesehen werden will,
@@ -375,8 +397,8 @@ bleibt ein Offline-Club: Er liegt nur auf dem Gerät seines Admins, und nichts d
 und löscht sie, wenn der Club gelöscht wird. Das Profil eines Spielers speichert er, solange der Spieler es dort
 lässt; ein Profil ohne Club und ohne Spiele, das ein Jahr lang kein Handy benutzt hat, löscht er von selbst. Damit
 niemand den Hub mit Profilen füllt, hält er die IP-Adresse eines Handys, das ein neues Profil anlegt, eine Stunde
-lang im Arbeitsspeicher – sie wird nie gespeichert. Eine Anmeldung im Hub endet mit dem Abmelden; ohne „Stay logged in“
-spätestens nach 12 Stunden, mit „Stay logged in“ 30 Tage nach deinem letzten Besuch. Von jeder Anmeldung speichert
+lang im Arbeitsspeicher – sie wird nie gespeichert. Eine Anmeldung im Hub endet mit dem Abmelden; ohne „Angemeldet bleiben“
+spätestens nach 12 Stunden, mit „Angemeldet bleiben“ 30 Tage nach deinem letzten Besuch. Von jeder Anmeldung speichert
 der Hub nur einen Hash ihres Schlüssels, bis sie endet. Links und Codes für eine neue PIN oder einen neuen
 Schlüssel gelten eine Stunde.</p>
 <p><strong>E-Mail:</strong> Die Kontakt-E-Mail-Adresse des Clubs wird nur für die Bestätigung bei der Anmeldung
@@ -384,7 +406,7 @@ des Clubs im Hub und die Bestätigung beim Löschen des Clubs genutzt. Diese Mai
 gehen von noreply@novacoil.de über den Mailserver unseres Hosters (siehe Abschnitt 4); Antworten gehen an
 info@novacoil.de.</p>
 <p><strong>E-Mail eines Spielers:</strong> Wenn du möchtest, gibst du dem Hub in der App eine E-Mail-Adresse (beim
-Registrieren oder unter Profil → Hub). Sie wird nur zum Bestätigen genutzt, für die Codes zum Anmelden, für einen Link, mit dem du eine vergessene
+Registrieren oder unter Profil → Hub) oder bei der Registrierung auf dem Hub. Sie wird nur zum Bestätigen genutzt, für die Codes zum Anmelden, für einen Link, mit dem du eine vergessene
 PIN neu setzt, und um dich in der Rangliste des Hubs zu zeigen, die eine bestätigte E-Mail voraussetzt. Ein Club-Admin
 verwaltet den Club auf dem Hub nur mit bestätigter E-Mail. Sie wird nirgends gezeigt und bleibt gespeichert, solange
 dein Profil auf dem Hub ist; du änderst sie in der App, und sie geht mit deinem Profil, wenn du es vom Hub nimmst.</p>
@@ -394,9 +416,11 @@ selbst kommt vom Hub.</p>
 
 <h3 id="de-cookies">3. Cookies</h3>
 <p>Der Hub setzt nur dann ein Cookie, wenn sich jemand anmeldet: <code>novacoil_member</code> für einen
-Spieler, <code>novacoil_club</code> für den Admin eines Clubs und <code>novacoil_admin</code> für den Betreiber
-des Hubs. Jedes enthält nur einen zufälligen Schlüssel für die Anmeldung. Ohne „Stay logged in“ endet es, wenn der
-Browser geschlossen wird (die Anmeldung spätestens nach 12 Stunden); mit „Stay logged in“, das du selbst wählst,
+Spieler – auch den Admin eines Clubs – und <code>novacoil_admin</code> für den Betreiber des Hubs. Jedes enthält nur
+einen zufälligen Schlüssel für die Anmeldung. Setzt du nach dem Code aus der Mail den Haken „Diesem Browser 30 Tage
+vertrauen“, enthält <code>novacoil_trust</code> 30 Tage lang einen zufälligen Schlüssel, damit dort die PIN genügt;
+der Hub speichert davon nur einen Hash. Ohne „Angemeldet bleiben“ endet das Anmelde-Cookie, wenn der
+Browser geschlossen wird (die Anmeldung spätestens nach 12 Stunden); mit „Angemeldet bleiben“, das du selbst wählst,
 bleibt es 30 Tage nach deinem letzten Besuch erhalten. Beim Abmelden wird es gelöscht. Sie sind für die von dir
 gewünschte Anmeldung technisch erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Weitere Cookies, insbesondere Tracking-
 oder Werbe-Cookies, gibt es weder im Hub noch auf der Website.</p>
@@ -419,7 +443,7 @@ sie dort auf, verarbeitet GitHub deine IP-Adresse, um sie auszuliefern.</p>
 <ul>
   <li>Bereitstellung des von dir genutzten Spiels und des Club-Zugangs im Hub für den Admin: Art. 6 Abs. 1
   lit. b DSGVO.</li>
-  <li>Speichern deines Profils im Hub, sein Abgleich mit deinen Handys und das Zeigen deines Namens und Bildes
+  <li>Speichern deines Profils im Hub – in der App angelegt oder auf dem Hub registriert –, sein Abgleich mit deinen Handys und das Zeigen deines Namens und Bildes
   dort: deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), bei Spielern unter 16 die eines Elternteils (Art. 8
   DSGVO). Du kannst sie jederzeit mit den Schaltern in der App oder im Hub widerrufen; was vorher geschah, bleibt
   rechtmäßig.</li>
@@ -448,6 +472,8 @@ vom Spielgerät des Clubs.</p>
   und die App kann das Profil nicht zurückholen.</li>
   <li>Oder bitte den Admin deines Clubs, der dich im Club-Login des Hubs löschen kann.</li>
   <li>Ein Profil ohne Club und ohne Spiele, das ein Jahr lang kein Handy benutzt, wird von selbst gelöscht.</li>
+  <li>Eine Registrierung auf dem Hub, die nicht innerhalb eines Tages über den Link in der Mail bestätigt wird,
+  löscht sich von selbst.</li>
 </ol>
 <p>Nur den Namen auszublenden („Namen und Bild zeigen“ aus, oder „Make me anonymous“ im Hub) löscht nichts: Der
 Hub behält dein Profil und zeigt dich als „Anonym“.</p>
@@ -475,7 +501,8 @@ Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttga
 
 <h3>Kinder</h3>
 <p>NovaCoil richtet sich nicht an Kinder unter 13 Jahren. Spieler unter 16 speichern ihr Profil im Hub nur mit
-Einwilligung eines Elternteils; die App fragt danach, bevor das Profil dorthin geht.</p>
+Einwilligung eines Elternteils; die App fragt danach, bevor das Profil dorthin geht. Die Registrierung auf dem Hub ohne App ist nur für Spieler
+ab 16 Jahren.</p>
 
 <h3>Kontakt</h3>
 <p>Fragen zum Datenschutz und zum Hub: <a href="mailto:info@novacoil.de">info@novacoil.de</a> oder
